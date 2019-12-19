@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Weather Widget</h1>
+    <search-city />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SearchCity from "./components/SearchCity.vue";
 
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    SearchCity
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  width: 60%;
+  margin: 0 auto;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.weather-container {
+  padding: 10px;
+  border: 2px solid #e7e7e7;
+  margin-bottom: 20px;
 }
 </style>
